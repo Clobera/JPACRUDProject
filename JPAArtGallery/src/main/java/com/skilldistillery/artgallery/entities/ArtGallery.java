@@ -17,8 +17,8 @@ public class ArtGallery {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
-	@Column(name = "art_style")
-	private String artStyle;
+	@Column(name = "room_name")
+	private String roomName;
 
 	public ArtGallery() {
 
@@ -32,12 +32,12 @@ public class ArtGallery {
 		this.id = id;
 	}
 
-	public String getArtStyle() {
-		return artStyle;
+	public String getRoomName() {
+		return roomName;
 	}
 
-	public void setArtStyle(String artStyle) {
-		this.artStyle = artStyle;
+	public void setRoomName(String roomName) {
+		this.roomName = roomName;
 	}
 
 	@Override
@@ -59,7 +59,8 @@ public class ArtGallery {
 
 	@Override
 	public String toString() {
-		return "ArtGallery [id=" + id + ", artStyle=" + artStyle + "]";
+		return "ArtGallery [id=" + id + ", roomName=" + roomName + "]";
 	}
+	
 
 }

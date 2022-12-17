@@ -9,6 +9,7 @@ import javax.transaction.Transactional;
 import org.springframework.stereotype.Service;
 
 import com.skilldistillery.artgallery.entities.ArtGallery;
+import com.skilldistillery.artgallery.entities.ArtPiece;
 
 @Service
 @Transactional
@@ -17,22 +18,22 @@ public class ArtGalleryDaoJpaImpl implements ArtGalleryDAO {
 	private EntityManager em;
 
 	@Override
-	public ArtGallery findById(int artId) {
-		return em.find(ArtGallery.class, artId);
+	public ArtPiece findById(int artId) {
+		return em.find(ArtPiece.class, artId);
 	}
 
 	@Override
-	public List<ArtGallery> findAll() {
-		String jpql = "SELECT a FROM ArtGallery a";
+	public List<ArtPiece> findAll() {
+		String jpql = "SELECT p FROM ArtPiece p";
 		
 		
 		
-		return em.createQuery(jpql, ArtGallery.class).getResultList();
+		return em.createQuery(jpql, ArtPiece.class).getResultList();
 		
 	}
 
 	@Override
-	public ArtGallery update(int galleryId) {
+	public ArtPiece update(int galleryId) {
 		return null;
 		// TODO Auto-generated method stub
 		

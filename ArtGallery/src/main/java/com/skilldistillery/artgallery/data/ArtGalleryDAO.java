@@ -3,13 +3,14 @@ package com.skilldistillery.artgallery.data;
 import java.util.List;
 
 import com.skilldistillery.artgallery.entities.ArtGallery;
+import com.skilldistillery.artgallery.entities.ArtPiece;
 
 public interface ArtGalleryDAO {
 	
-	public ArtGallery findById(int artId);
+	public ArtPiece findById(int artId);
 	
-	public List<ArtGallery> findAll();
+	public List<ArtPiece> findAll();
 	
-	public ArtGallery update(int galleryId);
+	public ArtPiece update(int galleryId);
 	
 }

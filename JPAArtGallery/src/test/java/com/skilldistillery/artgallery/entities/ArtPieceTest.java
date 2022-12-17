@@ -13,11 +13,11 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class ArtGalleryTest {
-	
+class ArtPieceTest {
+
 	private static EntityManagerFactory emf;
 	private EntityManager em;
-	private ArtGallery gallery;
+	private ArtPiece artPiece;
 
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
@@ -32,19 +32,18 @@ class ArtGalleryTest {
 	@BeforeEach
 	void setUp() throws Exception {
 		em = emf.createEntityManager();
-		gallery = em.find(ArtGallery.class, 1);
+		artPiece = em.find(ArtPiece.class, 1);
 	}
 
 	@AfterEach
 	void tearDown() throws Exception {
 		em.close();
-		gallery = null;
+		artPiece = null;
 	}
 
 	@Test
 	void test() {
-		assertNotNull(gallery);
-		assertEquals("Abstract Room", gallery.getRoomName());
+		assertNotNull(artPiece);
+		assertEquals("Vincent van Gogh", artPiece.getArtistName());
 	}
-
 }

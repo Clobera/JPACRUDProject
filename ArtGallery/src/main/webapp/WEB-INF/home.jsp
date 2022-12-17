@@ -1,16 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Online Art Gallery</title>
+<%@include file="bootStrapHead.jsp"%>
 </head>
 <body>
-<h1>Online Art Gallery</h1>
+	<h1>Online Art Gallery</h1>
 
-${list}
+	<form action="showAll.do" class="container-fluid justify-content-start">
+		<button class="btn btn-outline-success me-2" type="submit">SHOW ALL FILMS</button>
+	</form>
+
 
 </body>
 </html>
