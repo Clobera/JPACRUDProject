@@ -37,10 +37,11 @@ public class ArtPiece {
 	private double dimensionWidth;
 
 	@Column(name = "year_created")
-	private int yearCreated;
+	private String yearCreated;
 
 	@Column(name = "picture_url")
 	private String pictureUrl;
+	
 
 	public ArtPiece() {
 
@@ -110,11 +111,11 @@ public class ArtPiece {
 		this.dimensionWidth = dimensionWidth;
 	}
 
-	public int getYearCreated() {
+	public String getYearCreated() {
 		return yearCreated;
 	}
 
-	public void setYearCreated(int yearCreated) {
+	public void setYearCreated(String yearCreated) {
 		this.yearCreated = yearCreated;
 	}
 
