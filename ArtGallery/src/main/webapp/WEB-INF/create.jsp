@@ -1,63 +1,59 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Update Piece Details</title>
+<title>Upload Art Piece</title>
 <%@include file="bootStrapHead.jsp"%>
 
 </head>
 <body>
+
 	<nav class="navbar bg-light">
 		<form action="home.do" class="container-fluid justify-content-start">
 			<button class="btn btn-outline-success me-2" type="submit">Home</button>
 		</form>
 	</nav>
-
-	<div class="container">
-		<h1>UPDATE FILM</h1>
+	<div class="container centerMe">
+		<h1>UPLOAD ART PIECE</h1>
 	</div>
 	<br>
-	<br>
-	<form action="updateArtPiece.do">
 
-		<input type="hidden" name="id" value="${art.id}">
+	<form action="createdArtPiece.do">
 
 		<div class="input-group mb-3 container">
 			<span class="input-group-text" id="basic-addon1">Piece Name</span> <input
 				type="text" name="pieceName" class="form-control"
-				placeholder="Username" aria-label="Username"
+				placeholder="**TYPE HERE**" aria-label="Username"
 				aria-describedby="basic-addon1" value="${art.pieceName}">
 		</div>
 
 		<div class="input-group mb-3 container">
 			<span class="input-group-text" id="basic-addon1">Artist Name</span> <input
 				type="text" name="artistName" class="form-control"
-				placeholder="Username" aria-label="Username"
+				placeholder="**TYPE HERE**" aria-label="Username"
 				aria-describedby="basic-addon1" value="${art.artistName}">
 		</div>
 
 		<div class="input-group mb-3 container">
 			<span class="input-group-text" id="basic-addon1">Description</span> <input
 				type="text" name="description" class="form-control"
-				placeholder="Username" aria-label="Username"
+				placeholder="**TYPE HERE**" aria-label="Username"
 				aria-describedby="basic-addon1" value="${art.description}">
 		</div>
 
 		<div class="input-group mb-3 container">
 			<span class="input-group-text" id="basic-addon1">Art Movement
 				(Modern, Abstract, Realism, etc...)</span> <input type="text"
-				name="artMovement" class="form-control" placeholder="Username"
+				name="artMovement" class="form-control" placeholder="**TYPE HERE**"
 				aria-label="Username" aria-describedby="basic-addon1"
 				value="${art.artMovement}">
 		</div>
 		<div class="input-group mb-3 container">
 			<span class="input-group-text" id="basic-addon1">Medium</span> <input
 				type="text" name="medium" class="form-control"
-				placeholder="Username" aria-label="Username"
+				placeholder="**TYPE HERE**" aria-label="Username"
 				aria-describedby="basic-addon1" value="${art.medium}">
 		</div>
 
@@ -324,7 +320,7 @@
 		<div class="input-group mb-3 container">
 			<span class="input-group-text" id="basic-addon1">Height (cm)</span> <input
 				type="number" name="dimensionHeight" class="form-control"
-				placeholder="Username" aria-label="Username"
+				placeholder="**TYPE HERE**" aria-label="Username"
 				aria-describedby="basic-addon1" step=".01"
 				value="${art.dimensionHeight}">
 		</div>
@@ -332,7 +328,7 @@
 		<div class="input-group mb-3 container">
 			<span class="input-group-text" id="basic-addon1">Width (cm)</span> <input
 				type="number" name="dimensionWidth" class="form-control"
-				placeholder="Username" aria-label="Username"
+				placeholder="**TYPE HERE**" aria-label="Username"
 				aria-describedby="basic-addon1" step=".01"
 				value="${art.dimensionWidth}">
 		</div>
@@ -340,19 +336,16 @@
 		<div class="input-group mb-3 container">
 			<span class="input-group-text" id="basic-addon1">Insert Image
 				URL</span> <input type="text" name="pictureUrl" class="form-control"
-				placeholder="Username" aria-label="Username"
-				aria-describedby="basic-addon1" value="${art.pictureUrl}">
+				placeholder="**INSERT URL OF PICTURE FROM THE WEB**"
+				aria-label="Username" aria-describedby="basic-addon1"
+				value="${art.pictureUrl}">
 		</div>
 
 
 		<div class="col-auto container">
-			<button type="submit" class="btn btn-primary">UPDATE</button>
+			<button type="submit" class="btn btn-primary">UPLOAD</button>
 		</div>
 	</form>
-
-
-
-
 
 </body>
 </html>

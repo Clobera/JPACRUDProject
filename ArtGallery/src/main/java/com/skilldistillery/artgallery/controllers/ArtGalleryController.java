@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.skilldistillery.artgallery.data.ArtGalleryDAO;
@@ -38,10 +39,20 @@ public class ArtGalleryController {
 	@RequestMapping(path = "getArtPiece.do" )
 	public String showArtPieces(@RequestParam int id, Model model) {
 		ArtPiece art = dao.findById(id);
-		
 		model.addAttribute("art", art);
 		
 		return "showPiece";
+	}
+	
+	@RequestMapping(path = "goCreateArtPiece.do" )
+	public String goCreateArtPiece() {
+		return "create";
+	}
+	
+	@RequestMapping(path = "createdArtPiece.do" )
+	public String createdArtPiece(ArtPiece art, Model model) {
+		dao.create(art);
+		return "home";
 	}
 	
 	@RequestMapping(path = "goToUpdatePage.do" )
@@ -58,14 +69,27 @@ public class ArtGalleryController {
 	
 	
 	@RequestMapping(path = "updateArtPiece.do" )
-	public String updateArtPiece(ArtPiece artPiece, Model model) {
+	public String updateArtPiece(@RequestParam int id, ArtPiece artPiece, Model model) {
 		
-//		ArtPiece art = dao.update(id, artPiece);
+		ArtPiece art = dao.update(id, artPiece);
 		
-//		model.addAttribute("art", art);
+		model.addAttribute("art", art);
 		
 		return "showPiece";
 	}
+
+	@RequestMapping(path = "deleteArtPiece.do", method = RequestMethod.GET )
+	public String deleteArtPiece(@RequestParam int id) {
+		boolean isDeleted = dao.delete(id);
+		
+		if(isDeleted == true) {
+			return "deleted";
+		}
+		
+		return "deleteFail";
+	}
+	
+	
 	
 	
 	

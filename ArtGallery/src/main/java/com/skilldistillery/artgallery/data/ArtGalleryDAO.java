@@ -12,4 +12,8 @@ public interface ArtGalleryDAO {
 	
 	public ArtPiece update(int artId, ArtPiece art);
 	
+	public boolean delete(int artId);
+	
+	public ArtPiece create(ArtPiece art);
+	
 }
