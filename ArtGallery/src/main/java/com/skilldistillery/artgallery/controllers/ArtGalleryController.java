@@ -44,6 +44,31 @@ public class ArtGalleryController {
 		return "showPiece";
 	}
 	
+	@RequestMapping(path = "goToUpdatePage.do" )
+	public String goToUpdate(@RequestParam int id, Model model) {
+
+//		int newId = Integer.parseInt(id);
+		ArtPiece art = dao.findById(id);
+		
+		model.addAttribute("art", art);
+		
+		return "update";
+	}
+
+	
+	
+	@RequestMapping(path = "updateArtPiece.do" )
+	public String updateArtPiece(ArtPiece artPiece, Model model) {
+		
+//		ArtPiece art = dao.update(id, artPiece);
+		
+//		model.addAttribute("art", art);
+		
+		return "showPiece";
+	}
+	
+	
+	
 	
 
 }

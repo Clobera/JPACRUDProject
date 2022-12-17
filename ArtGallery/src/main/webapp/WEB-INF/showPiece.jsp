@@ -30,6 +30,16 @@
 					<h5>Medium: ${art.medium}</h5>
 				</div>
 
+
+				<div>
+					<form action="goToUpdatePage.do"
+						class="container-fluid justify-content-start">
+						<button class="btn btn-outline-success me-2" type="submit">UPDATE FILM</button>
+						<input type="hidden" name="id" value = "${art.id}" />
+					</form>
+				</div>
+
+
 			</div>
 		</c:when>
 		<c:otherwise>

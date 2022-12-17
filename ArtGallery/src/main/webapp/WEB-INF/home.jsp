@@ -14,6 +14,12 @@
 	<form action="showAll.do" class="container-fluid justify-content-start">
 		<button class="btn btn-outline-success me-2" type="submit">SHOW ALL FILMS</button>
 	</form>
+	<br>
+	<br>
+	<form action="getArtPiece.do" class="container-fluid justify-content-start">
+		<button class="btn btn-outline-success me-2" type="submit">FIND BY ID</button>
+		<input type="text" name="id" />
+	</form>
 
 
 </body>

@@ -2,7 +2,6 @@ package com.skilldistillery.artgallery.data;
 
 import java.util.List;
 
-import com.skilldistillery.artgallery.entities.ArtGallery;
 import com.skilldistillery.artgallery.entities.ArtPiece;
 
 public interface ArtGalleryDAO {
@@ -11,6 +10,6 @@ public interface ArtGalleryDAO {
 	
 	public List<ArtPiece> findAll();
 	
-	public ArtPiece update(int galleryId);
+	public ArtPiece update(int artId, ArtPiece art);
 	
 }
