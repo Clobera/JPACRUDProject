@@ -24,31 +24,19 @@
 					<h1>All Art Pieces</h1>
 					<br>
 				</div>
-				<div class="container">
-					<div>
-						<table>
-							<c:forEach var="piece" items="${list}">
 
+				<div class="cards">
+					<c:forEach var="piece" items="${list}">
+						<div class="card">
+							<img alt="" src="${piece.pictureUrl}" class="card__image">
+							<div class="card__content">
+								<a href="getArtPiece.do?id=${piece.id}" class="card__link">${piece.pieceName}</a>
+							</div>
+						</div>
 
-								<%-- <div class="card" style="width: 18rem;">
-									<a href="getArtPiece.do?id=${piece.id}"> <img
-										src="${piece.pictureUrl}" class="card-img-top">
-									</a>
-									<div class="card-body">
-										<p class="card-text">Click on the image to view more info!</p>
-									</div>
-								</div>
-								<br>
-								<br> --%>
-
-								<tr>
-									<td><a href="getArtPiece.do?id=${piece.id}">${piece.pieceName}</a></td>
-								</tr>
-							</c:forEach>
-						</table>
-					</div>
-
+					</c:forEach>
 				</div>
+
 			</c:when>
 			<c:otherwise>
 		No Film Found
