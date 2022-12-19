@@ -5,6 +5,8 @@ In this project we were tasked with creating a DataBase of any subject of our ch
 
 I decided to make an online Art gallery combining my two loves - art and coding!
 
+<a href="http://18.232.244.192:8080/ArtGallery/home.do?" target="_blank" >Art Gallery</a>
+
 ### HOW TO USE
 
 On the home screen the name of my project is displayed and you have four options to choose from in the navbar at the top (which is displayed on every page). First, if you click on the "CCL" (my initials) it brings you to the home screen. Second, you have the option "show all" which brings you to a page that lists all of the art pieces in the Data Base. Next, the "Upload" option brings you to a page where you are prompted to fill in information on the piece you would like to upload. Lastly, The "Search ID" button will search for a art piece by an id number and show its information page.
