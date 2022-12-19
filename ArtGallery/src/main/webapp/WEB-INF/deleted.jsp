@@ -9,13 +9,7 @@
 <%@include file="bootStrapHead.jsp"%>
 </head>
 <body>
-	<div class="container">
-		<nav class="navbar bg-light">
-			<form action="home.do" class="container-fluid justify-content-start">
-				<button class="btn btn-outline-success me-2" type="submit">Home</button>
-			</form>
-		</nav>
-	</div>
+	<%@include file="navBar.jsp"%>
 
 	<div class="container">
 		<h1>ART PIECE HAS BEEN DELETED</h1>

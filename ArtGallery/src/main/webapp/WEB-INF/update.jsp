@@ -11,11 +11,7 @@
 
 </head>
 <body>
-	<nav class="navbar bg-light">
-		<form action="home.do" class="container-fluid justify-content-start">
-			<button class="btn btn-outline-success me-2" type="submit">Home</button>
-		</form>
-	</nav>
+	<%@include file="navBar.jsp"%>
 
 	<div class="container">
 		<h1>UPDATE FILM</h1>

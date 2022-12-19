@@ -9,12 +9,8 @@
 
 </head>
 <body>
+	<%@include file="navBar.jsp"%>
 
-	<nav class="navbar bg-light">
-		<form action="home.do" class="container-fluid justify-content-start">
-			<button class="btn btn-outline-success me-2" type="submit">Home</button>
-		</form>
-	</nav>
 	<div class="container centerMe">
 		<h1>UPLOAD ART PIECE</h1>
 	</div>

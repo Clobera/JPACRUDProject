@@ -9,13 +9,7 @@
 <%@include file="bootStrapHead.jsp"%>
 </head>
 <body>
-
-	<nav class="navbar bg-light">
-		<form action="home.do" class="container-fluid justify-content-start">
-			<button class="btn btn-outline-success me-2" type="submit">Home</button>
-		</form>
-	</nav>
-
+	<%@include file="navBar.jsp"%>
 
 	<c:choose>
 		<c:when test="${! empty art}">
@@ -24,7 +18,7 @@
 				<h1>${art.pieceName}(${art.yearCreated})</h1>
 
 				<div>
-					<h4>by ${art.artistName}</h4>
+					<h4>by ${art.artistName} (ID: ${art.id})</h4>
 					<img src="${art.pictureUrl}" >
 					<p>${art.description}</p>
 					<h5>Medium: ${art.medium}</h5>

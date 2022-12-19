@@ -10,6 +10,7 @@
 <%@include file="bootStrapHead.jsp"%>
 </head>
 <body>
+	<%@include file="navBar.jsp"%>
 	<h1>ART PIECE COULD NOT BE DELETED</h1>
 
 </body>

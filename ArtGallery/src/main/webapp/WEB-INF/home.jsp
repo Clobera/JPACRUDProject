@@ -9,34 +9,15 @@
 <%@include file="bootStrapHead.jsp"%>
 </head>
 <body>
-	<div class="container centerMe">
-		<h1>Online Art Gallery</h1>
-		<br> <br>
-	</div>
-
-	<div class="container homeContainer">
-
-
-		<form action="goCreateArtPiece.do"
-			class="container-fluid justify-content-start">
-			<button class="btn btn-outline-success me-2" type="submit">UPLOAD
-				ART PIECE</button>
-		</form>
-		<br>
-		<form action="showAll.do"
-			class="container-fluid justify-content-start">
-			<button class="btn btn-outline-success me-2" type="submit">SHOW
-				ALL ART PIECES</button>
-		</form>
-		<br>
-		<form action="getArtPiece.do"
-			class="container-fluid justify-content-start">
-			<button class="btn btn-outline-success me-2" type="submit">FIND
-				BY ID</button>
-			<input type="number" name="id" value="0" />
-		</form>
-
-	</div>
+<%@include file="navBar.jsp"%>
+	<section class="fwh-slide1p"></section>
+	<section class="fwh-slide1">
+		<div class="container centerMe">
+			<h1 class="homeTitle"><strong>Online Art Gallery</strong></h1>
+			<br> <br>
+		</div>
+	</section>
+	
 
 </body>
 </html>

@@ -1,3 +1,27 @@
+body{
+	background-color: #FAF9F6;
+}
+
+.glow:hover{
+	color: green; 
+}
+
+.homeTitle{
+	font-size: 75px;
+}
+
+.fwh-slide1p{
+  height: 45vh;
+/*   color: #faf9f9; */
+  box-sizing: border-box;
+}
+.fwh-slide1{
+  height: 45vh;
+  /* background-color: #a19592; */
+/*   color: #faf9f9; */
+  box-sizing: border-box;
+}
+
 .centerMe {
 	text-align: center;
 	font-family: "apercu",sans-serif;
