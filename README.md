@@ -5,6 +5,7 @@ In this project we were tasked with creating a DataBase of any subject of our ch
 
 I decided to make an online Art gallery combining my two loves - art and coding!
 
+HERE IS THE PROJECT LINK:
 <a href="http://18.232.244.192:8080/ArtGallery/home.do?" target="_blank" >Art Gallery</a>
 
 ### HOW TO USE
