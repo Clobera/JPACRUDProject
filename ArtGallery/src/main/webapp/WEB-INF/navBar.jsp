@@ -46,7 +46,7 @@
         </li> -->
 					<li class="nav-item">
 						<form class="d-flex" action="getArtPiece.do">
-							<button class="btn glow" type="submit">SEARCH</button>
+							<button class="btn glow" type="submit">SEARCH ID</button>
 							<input class="form-control me-2" type="search" value="0"
 								name="id" placeholder="Find a Piece by ID" aria-label="Search">
 						</form>
